@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [];
+        for (let i = 0; i < 10; i++) {
+            let soNhap = parseInt(prompt(`Nhập số nguyên thứ ${i + 1}:`));
+            a.push(soNhap);
+        }
+        let n = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] >= 10) {
+                n++;
+            }
+        }
+        console.log(`Có ${n} số lớn hơn hoặc bằng 10 trong mảng.`);
+    </script>
+</body>
+
+</html>

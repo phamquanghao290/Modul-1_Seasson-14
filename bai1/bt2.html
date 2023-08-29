@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        for(let i = 0; i < 10; i++){
+            let x = prompt(`mời bạn nhập số nguyên ${i+1} :`);
+            a.push(x);
+        }
+        let max = a[0];
+        let vitri = 0;
+
+        for(let i = 1; i < a.length; i++){
+            if(a[i] > max){
+                max = a[i];
+                vitri = i;
+            }
+        }
+        console.log(`Giá trị lớn nhất trong mảng là ${max} tại vị trí ${vitri}`);
+
+    </script>
+</body>
+</html>

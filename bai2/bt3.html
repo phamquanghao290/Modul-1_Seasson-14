@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("bạn muốn nhập bao nhiêu kí tự");
+            let numner = [];
+            let count = 0
+            for (let i = 0; i < num; i++) {
+                let number = prompt("mời bạn nhập kí tự ")
+                numner.push(number);
+            }
+            console.log(numner);
+            for (let i = 0; i < numner.length; i++) {
+                if (number.isNaN(numner[i]) == false) {
+                    count++;
+                }
+            }
+            console.log(`có tất cả ${count} kí tự số `);
+    </script>
+</body>
+</html>

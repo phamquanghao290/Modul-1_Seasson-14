@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [];
+            let n = parseInt(prompt("Nhập số lượng phần tử của mảng:"));
+            for (let i = 0; i < n; i++) {
+                let soNhap = parseInt(prompt(`Nhập phần tử thứ ${i + 1}:`));
+                a.push(soNhap);
+            }
+        // Đảo ngược mảng bằng cách sử dụng vòng lặp
+            for (let i = 0; i < Math.floor(a.length / 2); i++) {
+                // Hoán đổi phần tử thứ i với phần tử tương ứng ở vị trí ngược lại
+                let temp = a[i];
+                a[i] = a[a.length - 1 - i];
+                a[a.length - 1 - i] = temp;
+            }
+            console.log("Mảng sau khi đảo ngược:", a);
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
